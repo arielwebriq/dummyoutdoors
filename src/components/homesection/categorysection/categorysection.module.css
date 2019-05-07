@@ -1,0 +1,10 @@
+.productarea {
+	background-color: #eee;
+	height: 140px;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+.productarea img {
+	width: 65%;
+}
