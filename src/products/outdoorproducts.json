@@ -1,0 +1,49 @@
+{
+  "backpacks": [
+    {
+      "id": 0,
+      "name": "Garoda 35",
+      "shortdesc": "Designed for asian fit and natural motion with proper angle for hiking greater distance!",
+      "liters": "35 liters",
+      "colors": ["blue", "green", "black"],
+      "price": "2000",
+      "image": "../images/backpackproduct.png"
+    },
+    {
+      "id": 1,
+      "name": "Garoda 45",
+      "shortdesc": "Lightweight handmade backpack product. A quality backpack product that will help you reach your destinations",
+      "liters": "45 liters",
+      "colors": ["blue", "green", "black"],
+      "price": "2500",
+      "image": "../images/backpackproduct.png"
+    },
+    {
+      "id": 2,
+      "name": "Burning 50",
+      "shortdesc": "Go and reach the highest mountain with a burning passion and resilience.",
+      "liters": "50 liters",
+      "colors": ["blue", "green", "black"],
+      "price": "3000",
+      "image": "../images/backpackproduct.png"
+    }
+  ],
+  "schoolbags": [
+    {
+      "name": "School Bag winter",
+      "shortdesc": "school bag that even winter cant destroy it.",
+      "liters": "15 liters",
+      "colors": ["blue", "green", "black"],
+      "price": "800",
+      "image": "../images/schoolbag.png"
+    },
+    {
+      "name": "School Bag summer",
+      "shortdesc": "Summer and need a school bag? Contact me :)",
+      "liters": "10 liters",
+      "colors": ["blue", "green", "black"],
+      "price": "700",
+      "image": "../images/schoolbag.png"
+    }
+  ]
+}

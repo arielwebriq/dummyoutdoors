@@ -4,7 +4,32 @@
 	width: 100%;
 	padding: 10px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 .productarea img {
 	width: 65%;
+}
+.productlistingarea {
+	background-color: #eee;
+	height: 300px;
+	width: 100%;
+	padding: 20px;
+	margin: 10px 0;
+	text-align: center;
+}
+.productlistingarea h5,
+.productlistingarea span,
+.productlistingarea a {
+	text-align: center;
+}
+.left {
+	float: left;
+	width: 50%;
+}
+.right {
+	float: right;
+	width: 50%;
+}
+.center {
+	text-align: center;
 }

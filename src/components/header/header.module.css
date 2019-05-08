@@ -1,5 +1,13 @@
 .header {
 	height: 80px;
-	background-color: green;
 	margin-bottom: 20px;
+}
+.header img {
+	padding: 10px 0;
+	width: 50px;
+}
+.header span {
+	float: right;
+	padding: 20px;
+	font-size: 25px;
 }
