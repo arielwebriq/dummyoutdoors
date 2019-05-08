@@ -6,8 +6,8 @@ import Menu from "../../images/menu.png"
 const Header = () => (
 	<div className={styles.header}>
 		<Container>
-			<img src={Menu} className="img-fluid" />
-			<span>CEBU Outdoors Shop</span>
+			<img src={Menu} className="img-fluid" alt="outdoor product burger menu" />
+			<span>Outdoor Shop</span>
 		</Container>
 	</div>
 )

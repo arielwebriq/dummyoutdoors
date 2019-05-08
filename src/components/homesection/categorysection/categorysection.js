@@ -3,10 +3,8 @@ import { Container, Row, Col } from "reactstrap"
 import styles from "./categorysection.module.css"
 import BackPack from "../../../images/Backpack.png"
 import SchoolBag from "../../../images/schoolbag.png"
-import sampleproduct from "../../../images/backpackproduct.png"
+// import sampleproduct from "../../../images/backpackproduct.png"
 import { Link } from "gatsby"
-
-const products = require("../../../products/outdoorproducts.json")
 
 class CategorySection extends React.Component {
 	constructor(props) {
@@ -26,11 +24,11 @@ class CategorySection extends React.Component {
 	render() {
 		const categoryValue =
 			this.state.clicked && this.state.category === "Backpacks"
-				? products.backpacks
-				: products.schoolbags
+				? this.props.data[0].backpacks
+				: this.props.data[0].schoolbags
 		return (
 			<Container>
-				<h3>Select Category</h3>
+				<span>SELECT CATEGORY</span>
 				<Row>
 					<Col xs={6}>
 						<div
@@ -67,20 +65,30 @@ class CategorySection extends React.Component {
 						</div>
 					</Col>
 				</Row>
-				<h4>{this.state.clicked ? this.state.category : "Backpacks"}</h4>
+				<h5>
+					{this.state.clicked ? this.state.category.toUpperCase() : "BACKPACKS"}
+				</h5>
 				{categoryValue.map(item => (
 					<Row key={item.name}>
 						<Col xs={12}>
 							<div className={styles.productlistingarea}>
-								<img src={sampleproduct} className="img-fluid mx-auto" />
+								<h5 className={styles.center}>{item.name.toUpperCase()}</h5>
+								<img
+									src={item.image.publicURL}
+									className="img-fluid mx-auto"
+									alt="sample"
+								/>
+								<p className={styles.center}>
+									{item.shortdesc}
+									<br />
+									<Link
+										to="/contact"
+										className={`btn ${styles.center} ${styles.secondarybtn}`}
+									>
+										<small>MESSAGE SELLER</small>
+									</Link>
+								</p>
 							</div>
-							<h5 className={styles.center}>{item.name.toUpperCase()}</h5>
-							<p className={styles.center}>
-								{item.shortdesc} <br />
-								<Link to="/contact" className={styles.center}>
-									<small>Message Seller</small>
-								</Link>
-							</p>
 						</Col>
 					</Row>
 				))}
@@ -89,3 +97,4 @@ class CategorySection extends React.Component {
 	}
 }
 export default CategorySection
+

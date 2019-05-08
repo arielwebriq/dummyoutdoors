@@ -1,5 +1,5 @@
 .productarea {
-	background-color: #eee;
+	background-color: #fff;
 	height: 140px;
 	width: 100%;
 	padding: 10px;
@@ -7,20 +7,33 @@
 	margin-bottom: 20px;
 }
 .productarea img {
-	width: 65%;
+	width: 55%;
 }
 .productlistingarea {
-	background-color: #eee;
-	height: 300px;
+	height: auto;
 	width: 100%;
-	padding: 20px;
-	margin: 10px 0;
+	margin: 10px 0 30px 0;
 	text-align: center;
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+	padding-bottom: 15px;
+	border-radius: 2%;
+}
+.productlistingarea h5 {
+	background-color: #163b2f;
+	color: #fff;
+	padding: 10px;
+}
+.productlistingarea img {
+	width: 200px;
 }
 .productlistingarea h5,
-.productlistingarea span,
+.productlistingarea p,
 .productlistingarea a {
 	text-align: center;
+	margin: 10px 0;
+}
+.productlistingarea p {
+	padding: 0 10px;
 }
 .left {
 	float: left;
@@ -32,4 +45,9 @@
 }
 .center {
 	text-align: center;
+}
+.secondarybtn {
+	background-color: #aadaf2;
+	color: #000;
+	border-radius: 2%;
 }
